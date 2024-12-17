@@ -1,0 +1,2 @@
+*/5 * * * * bash /root/node/wan_checker.sh
+

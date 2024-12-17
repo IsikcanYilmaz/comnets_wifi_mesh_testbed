@@ -1,0 +1,35 @@
+
+config cs 'cs'
+	option capacity '1024'
+	option policy 'lru'
+
+config rib 'rib'
+	option lockdown_localhost '1'
+	option propagate '0'
+	option propagate_refresh '300'
+
+config face_system 'face_system'
+	option ether_listen '1'
+	option ether_mcast '1'
+	option udp_listen '1'
+	option udp_mcast '1'
+	option tcp_listen '1'
+	option ws_listen '1'
+
+config strategy 'strategy_default'
+	option prefix '/'
+	option strategy 'self-learning'
+	option version '1'
+
+config strategy 'strategy_localhost'
+	option prefix '/localhost'
+	option strategy 'multicast'
+
+config strategy 'strategy_localhop'
+	option prefix '/localhop'
+	option strategy 'multicast'
+
+config face 'face_autoconfig'
+	option use_autoconfig '1'
+	option fch_server 'http://ndn-fch.named-data.net/'
+

@@ -1,0 +1,254 @@
+Package: infoedit
+Version: 0.0.20221229-r1
+Depends: libc, boost, boost-program_options
+Source: feeds/yoursunny/named-data/infoedit
+SourceName: infoedit
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 204800
+Filename: infoedit_0.0.20221229-r1_aarch64_cortex-a53.ipk
+Size: 61148
+SHA256sum: 9631075f22f5695758253592ffcd6940bf9fbed08f2504f7b4ab018a74604d42
+Description:  Command Line Tools for Boost INFO Format
+
+Package: libndn-cxx0.8.1
+Version: 0.8.1-r1
+Depends: libc, boost, boost-chrono, boost-date_time, boost-filesystem, boost-log, boost-program_options, boost-system, boost-thread, libatomic1, libopenssl3, libsqlite3-0
+Provides: libndn-cxx
+Source: feeds/yoursunny/named-data/ndn-cxx
+SourceName: ndn-cxx
+Section: net
+SourceDateEpoch: 1716155113
+ABIVersion: 0.8.1
+Architecture: aarch64_cortex-a53
+Installed-Size: 3942400
+Filename: libndn-cxx0.8.1_0.8.1-r1_aarch64_cortex-a53.ipk
+Size: 1100446
+SHA256sum: b0d3a2926a575c6b47af01b8d560df51ec69690104834cbe5732d6c9057d5ece
+Description:  NDN C++ library with eXperimental eXtensions
+
+Package: ndn-autoconfig
+Version: 22.12-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/nfd
+SourceName: nfd
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 604160
+Filename: ndn-autoconfig_22.12-r1_aarch64_cortex-a53.ipk
+Size: 181934
+SHA256sum: 97479a7aaaceb97b6886278ec13aa9bf5efbfcba87084f4bfb1e2e32e9afd541
+Description:  NDN HUB discovery client and server
+
+Package: ndn-chunks
+Version: 22.12-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn-tools
+SourceName: ndn-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 399360
+Filename: ndn-chunks_22.12-r1_aarch64_cortex-a53.ipk
+Size: 115102
+SHA256sum: 4109f3f4ba54c5e43758ac95d875dff764915323fdabc70cb35a836bf6d01423
+Description:  transfer a file as Data segments
+
+Package: ndn-dissect
+Version: 22.12-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn-tools
+SourceName: ndn-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 143360
+Filename: ndn-dissect_22.12-r1_aarch64_cortex-a53.ipk
+Size: 26806
+SHA256sum: d826d88934df246d8d7018d7127940c3324fdcb254b38a7c7909f08b5ea89ea2
+Description:  NDN packet format inspector
+
+Package: ndn6-file-server
+Version: 0.0.20221230-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn6-tools
+SourceName: ndn6-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 143360
+Filename: ndn6-file-server_0.0.20221230-r1_aarch64_cortex-a53.ipk
+Size: 24559
+SHA256sum: 299cbf045ee6d7a7e0f45947298544cb986ae7df4781e4154d93ff832f423a05
+Description:  serve file from filesystem
+
+Package: ndn6-prefix-proxy
+Version: 0.0.20221230-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn6-tools
+SourceName: ndn6-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 204800
+Filename: ndn6-prefix-proxy_0.0.20221230-r1_aarch64_cortex-a53.ipk
+Size: 53543
+SHA256sum: 4025c9434a4ab22726f3e8b5d55da8d0d31baaf502870e920555bcf15c38f8c7
+Description:  handle prefix registration command with prefix confinement
+
+Package: ndn6-register-prefix-cmd
+Version: 0.0.20221230-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn6-tools
+SourceName: ndn6-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 143360
+Filename: ndn6-register-prefix-cmd_0.0.20221230-r1_aarch64_cortex-a53.ipk
+Size: 32957
+SHA256sum: 871dd3caef774cc3b1d4b3e80faa19755a3b7166a9dc5351e57dc35b6face370
+Description:  prepare a prefix registration command
+
+Package: ndn6-register-prefix-remote
+Version: 0.0.20221230-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn6-tools
+SourceName: ndn6-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 204800
+Filename: ndn6-register-prefix-remote_0.0.20221230-r1_aarch64_cortex-a53.ipk
+Size: 50968
+SHA256sum: f15cd6b005e02b8f9de0029ea3fd65cb0b4dbcc87ffe03cb01ad813e9c984bce
+Description:  send prefix registration commands to a specified remote face
+
+Package: ndn6-serve-certs
+Version: 0.0.20221230-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn6-tools
+SourceName: ndn6-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 204800
+Filename: ndn6-serve-certs_0.0.20221230-r1_aarch64_cortex-a53.ipk
+Size: 47208
+SHA256sum: 4d3c11ad6e939dd9989d802c86aa4434e433bf16ffb8c33f1c568876b244556a
+Description:  serve certificates
+
+Package: ndn6-unix-time-service
+Version: 0.0.20221230-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn6-tools
+SourceName: ndn6-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 71680
+Filename: ndn6-unix-time-service_0.0.20221230-r1_aarch64_cortex-a53.ipk
+Size: 16085
+SHA256sum: 8bb07f10d527ef3ff8b113715838b078435f220c5635ad23391fe75c6913151e
+Description:  answer queries of current Unix timestamp
+
+Package: ndnpeek
+Version: 22.12-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn-tools
+SourceName: ndn-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 276480
+Filename: ndnpeek_22.12-r1_aarch64_cortex-a53.ipk
+Size: 74410
+SHA256sum: 6280bb52fb01e2d42cbad0844c71b0c8c7ccd5f9984dfb2262134854960fc426
+Description:  request and serve a single Data packet
+
+Package: ndnping
+Version: 22.12-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn-tools
+SourceName: ndn-tools
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 532480
+Filename: ndnping_22.12-r1_aarch64_cortex-a53.ipk
+Size: 137855
+SHA256sum: 2d2a7482bca6fd5eada0e4e292347d3f4b4d7253701d9ca7b4faf24865878d25
+Description:  NDN reachability testing tool
+
+Package: ndnsec
+Version: 0.8.1-r1
+Depends: libc, libndn-cxx0.8.1
+Source: feeds/yoursunny/named-data/ndn-cxx
+SourceName: ndn-cxx
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 399360
+Filename: ndnsec_0.8.1-r1_aarch64_cortex-a53.ipk
+Size: 122350
+SHA256sum: 86d7e4e6029338917e1e18856742f416b41931f16d00beaba5defc2261749c25
+Description:  NDN security management toolkit
+
+Package: nfd-luci
+Version: 0.0.20201115-r1
+Depends: luci-compat, luci-lib-json, nfd-service, nfd-status-http, libc
+Source: feeds/yoursunny/named-data/nfd-luci
+SourceName: nfd-luci
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: all
+Installed-Size: 30720
+Filename: nfd-luci_0.0.20201115-r1_all.ipk
+Size: 5403
+SHA256sum: 3ea1a504714c1ee9424c83ae37c1194d58aa2a7c9ea2d0b54344a66203ee3610
+Description:  NDN config and status pages in LuCI
+
+Package: nfd-service
+Version: 0.0.20201115-r1
+Depends: infoedit, libuci-lua, luci-base, ndn-autoconfig, nfd, libc
+Source: feeds/yoursunny/named-data/nfd-service
+SourceName: nfd-service
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: all
+Installed-Size: 20480
+Filename: nfd-service_0.0.20201115-r1_all.ipk
+Size: 3826
+SHA256sum: 823f4ff1bf5084d6fdcf1ebd3d8f49cadcbbecbd7b2f5f19cd57c24b80fff6cd
+Description:  Run NFD as a system service
+
+Package: nfd-status-http
+Version: 22.12-r1
+Depends: nfd, uhttpd, libc
+Source: feeds/yoursunny/named-data/nfd
+SourceName: nfd
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 30720
+Filename: nfd-status-http_22.12-r1_aarch64_cortex-a53.ipk
+Size: 4714
+SHA256sum: 9b0f8c812585844708c0c3a1820c009634e404d8f2c405afadcab2969ca894bd
+Description:  serve NFD status page at /cgi-bin/nfd-status
+
+Package: nfd
+Version: 22.12-r1
+Depends: libc, libndn-cxx0.8.1, libpcap1
+Source: feeds/yoursunny/named-data/nfd
+SourceName: nfd
+Section: net
+SourceDateEpoch: 1716155113
+Architecture: aarch64_cortex-a53
+Installed-Size: 2365440
+Filename: nfd_22.12-r1_aarch64_cortex-a53.ipk
+Size: 841666
+SHA256sum: dd16125e965181033970b05bba52f7937ee4d1f85b4f75cd6d3b197835e8dea9
+Description:  NDN Forwarding Daemon
+

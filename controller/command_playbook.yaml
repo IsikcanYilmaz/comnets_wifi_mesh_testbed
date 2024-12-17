@@ -1,0 +1,11 @@
+- name: Command 
+  hosts: mesh_testbed 
+  tasks:
+    - name: Command 
+      async: 45
+      poll: 0
+      vars:
+        cmd: "{{ cmd }}"
+      ansible.builtin.shell: |
+        echo "[*] Running:" {{ cmd }}
+        eval {{ cmd }}

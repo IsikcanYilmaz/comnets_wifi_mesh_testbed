@@ -1,0 +1,57 @@
+#!/bin/sh
+
+# Copy this to /etc/rc.button/reset
+# This script handles the button press on the Spitz 
+
+. /lib/functions.sh
+
+OVERLAY="$( grep ' /overlay ' /proc/mounts )"
+
+IP_NOTIFIER_THRESH_S=2 # Between 0 - 2
+REBOOT_THRESH_S=5 # Between 2 - 5
+CHECKPOINT_RESET_THRESH_S=10 # Between 5 - 10
+FACT_RESET_THRESH_S=20 # Between 20 - x
+
+CHECKPOINT_CONF_FILE="/root/checkpoint.tar.gz"
+
+case "$ACTION" in
+	pressed)
+		[ -z "$OVERLAY" ] && return 0
+		return 5
+		;;
+
+	timeout)
+		. /etc/diag.sh
+		set_state failsafe
+		;;
+
+	released)
+		echo $(date) "BUTTON PRESS $SEEN S" | gree /dev/console >> /root/button_log
+		if [ "$SEEN" -lt "$IP_NOTIFIER_THRESH_S" ]; then
+			# If pressed less than 2 seconds, send the ICMP message to my computer with the WAN IP
+			echo "IP NOTIFIER" | tee /dev/console >> /root/button_log
+			python /root/node/ip_notifier.py
+
+		elif [ "$SEEN" -lt "$REBOOT_THRESH_S" ]; then
+			# Pressed between 2 and 5 seconds, reboot
+			echo "REBOOT" | tee /dev/console >> /root/button_log
+			sync
+			reboot
+
+		elif [ "$SEEN" -lt "$CHECKPOINT_RESET_THRESH_S" ]; then
+			# Pressed between 5 and 10 seconds, revert to checkpoint configuration
+			echo "REVERTING TO CHECKPOINT" | tee /dev/console >> /root/button_log
+			sysupgrade -r "$CHECKPOINT_CONF_FILE"
+			sync 
+			reboot
+
+		elif [ "$SEEN" -ge "$FACT_RESET_THRESH_S" -a -n "$OVERLAY" ]; then
+			# Greater than 10 seconds means factory reset
+			echo "FACTORY RESET" | tee /dev/console >> /root/button_log
+			jffs2reset -y && reboot &
+
+		fi
+		;;
+esac
+
+return 0

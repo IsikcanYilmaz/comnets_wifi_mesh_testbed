@@ -3,7 +3,7 @@ Source and configs for TUD ComNets WiFi Mesh Testbed
 
 Consisting of 5 Spitz AX GL-X3000 Routers forming an 802.11s Mesh network
 
-# Spitz AX Mesh router
+# Spitz AX router
 - Spitz AX GL-X3000 5G/WiFi6 Router
 - https://forum.openwrt.org/t/gl-inet-gl-x3000-spitz-ax-support/162143
 - MediatTek Ralink ARM
@@ -19,7 +19,11 @@ Consisting of 5 Spitz AX GL-X3000 Routers forming an 802.11s Mesh network
 
 # Instructions and Notes 
 
+The `openwrt` directory is where we build our OpenWRT image. It contains the build config and initial file system structure.
+
 The `controller` directory has scripts and ansible configs that are meant to be run from your PC.
 
 The `node` directory is meant to be placed in the router and contains scripts meant to run on the router. 
+
+
 

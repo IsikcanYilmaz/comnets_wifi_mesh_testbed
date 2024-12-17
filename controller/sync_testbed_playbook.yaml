@@ -1,0 +1,7 @@
+- name: Sync testbed code 
+  hosts: mesh_testbed 
+  tasks:
+   - name: Sync testbed code 
+     ansible.builtin.synchronize:
+       src: /home/jon/KODMOD/spitz_box/node
+       dest: /root/

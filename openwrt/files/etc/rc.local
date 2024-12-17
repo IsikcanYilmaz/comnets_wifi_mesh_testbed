@@ -1,0 +1,8 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+if [ ! -f /root/freshcomplete ]; then bash /root/node/fresh.sh > /root/freshcomplete; fi
+
+python /root/node/ip_notifier.py
+ifup wan
+exit 0

@@ -1,0 +1,7 @@
+- name: Reboot 
+  hosts: mesh_testbed 
+  tasks:
+    - name: Reboot 
+      async: 45
+      poll: 0
+      ansible.builtin.shell: reboot

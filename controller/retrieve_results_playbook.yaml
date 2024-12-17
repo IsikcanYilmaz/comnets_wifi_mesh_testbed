@@ -1,0 +1,8 @@
+- name: Retrieve results 
+  hosts: mesh_testbed 
+  tasks:
+   - name: Retrieve results
+     ansible.builtin.synchronize:
+       src: /root/results
+       dest: /home/jon/KODMOD/spitz_box/results/{{ inventory_hostname }}/
+       mode: pull
