@@ -1,5 +1,5 @@
 # ComNets WiFi Mesh Testbed
-Source and configs for TUD ComNets WiFi Mesh Testbed 
+Source and configs for TUDresden ComNets WiFi Mesh Testbed 
 
 Consisting of 5 Spitz AX GL-X3000 Routers forming an 802.11s Mesh network
 
